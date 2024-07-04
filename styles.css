@@ -209,6 +209,7 @@ button:hover {
     color: #1F2937;
     text-align: center;
     max-width: 800px;
+    margin-bottom: 10px;
 }
 
 /* quote text */
