@@ -53,6 +53,7 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
 }
@@ -224,12 +225,13 @@ button:hover {
     margin: 50px auto;
     border-radius: 5px;
     padding: 30px 60px;
-    width: 500px;
+    max-width: 500px;
     display: flex;
     background-color: #3882F6;
     justify-content: space-evenly;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 /* pop up container */
