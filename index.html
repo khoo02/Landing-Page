@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- website title -->
     <title>My Website</title>
-    <!-- font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- styles.css -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- header container -->
     <div class="header">
-
-        <!-- header information -->
-        <div class="inner-header">
+        <!--  logo/nav container -->
+        <div class="logo-nav">
             <!-- logo -->
             <div class="logo-container">
-                <h1>Iverson <span>Khoo</span></h1>
+                <a href="#">
+                    <h1>Iverson <span>Khoo</span></h1>
+                </a>
             </div>
-            <!-- navigation list -->
+            <!-- navigation bar -->
             <ul class="navigation">
                 <!-- links -->
                 <a href="#"><li>Home</li></a>
@@ -31,30 +28,94 @@
                 <a href="#"><li>Contact</li></a>
             </ul>
         </div>
-    
-        <!-- header info -->
-        <div class="header-info">
+        <!-- header body container-->
+        <div class="header-body">
             <!-- text -->
-            <div class="header-info-text">
-                <!-- description title -->
-                <h1>My Website</h1>
-                <!--  -->
-                <p>Website Description. blah blah blah blah blah blah. </p>
-                <a class="header-button" href="#">
-                    <button>button</button>
-                </a>
+            <div class="header-info-container">
+                <!-- header title -->
+                <span class="header-title">
+                    <h1>This website is awesome</h1>
+                </span> 
+                <!-- header description -->
+                <p class="website-description">Website Description: blah blah blah blah blah blah. </p>
+                <!-- header button -->
+                <div class="header-button-container">
+                    <a href="#"><button class="header-button">button</button>
+                    </a>
+                </div>
             </div>
             <!-- image -->
             <div class="header-image">
-                <img src="images/penguin_funny_blue_water.jpg" alt="penguin.jpg" style="width: 250px; height:150px; display:inline-block"/>
+                <a href="images/penguin_funny_blue_water.jpg">
+                    <img src="images/penguin_funny_blue_water.jpg" alt="penguin.jpg" style="width: 250px; height:150px; border-radius: 50px; display:inline-block"/>
+                </a>
             </div>
         </div>
-
-
     </div>
-    <!-- website body -->
-    <div class="body"></div>
-    <!-- footer -->
-    <div class="footer"></div>
+
+    <!-- body container -->
+    <div class="body">
+        <!-- body info container -->
+        <div class="body-info">
+            <!-- body header -->
+            <h2 class="body-header">Some random information.</h2>
+            <!-- bubble container-->
+            <div class="bubble-container">
+                <!-- 1st bubble -->
+                <div class="bubble">
+                    <div class="bubble-outline"></div>
+                    <p class="bubble-text">this is some subtext under an illustration or image.</p>
+                </div>
+                <!-- 2nd bubble -->
+                <div class="bubble">
+                    <div class="bubble-outline"></div>
+                    <p class="bubble-text">this is some subtext under an illustration or image.</p>
+                </div>
+                <!-- 3rd bubble -->
+                <div class="bubble">
+                    <div class="bubble-outline"></div>
+                    <p class="bubble-text">this is some subtext under an illustration or image.</p>
+                </div>
+                <!-- 4th bubble -->
+                <div class="bubble">
+                    <div class="bubble-outline"></div>
+                    <p class="bubble-text">this is some subtext under an illustration or image.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quote container-->
+    <div class="quote-container">
+        <!-- quote text -->
+        <div class="quote-text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice. 
+        </div>
+        <!-- quote author -->
+        <div class="author">
+            <span>-Thor, God of Thunder</span>
+        </div>
+    </div>
+
+    <!-- pop up container -->
+    <div class="pop-up-container">
+        <!-- text container -->
+        <div class="pop-up-text-container">
+            <!-- title -->
+            <h3 class="pop-up-title">Wow! There's a cool button!</h3>
+            <!-- description -->
+            <p class="pop-up-description">Click it! It's right there!</p>
+        </div>
+        <!-- button container -->
+        <div class="pop-up-button-container">
+            <!-- button and link -->
+            <a href="#"><button class="pop-up-button">button</button></a>
+        </div>
+    </div>
+
+    <!-- footer container-->
+    <div class="footer-container">
+        <!-- footer description -->
+        <div class="footer-text"><p>Copyright @ The Odin Project 2024</p></div>
+    </div>
 </body>
 </html>

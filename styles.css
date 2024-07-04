@@ -1,3 +1,27 @@
+/* fonts */
+@font-face {
+    font-family: 'Hero Light Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Hero Light Regular'), url(/fonts/HeroLight-Regular.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'Hero Light Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Hero Light Bold'), url(fonts/HeroLight-Bold.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'Hero Light Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Hero Light Light'), url(fonts/HeroLight-Light.woff) format('woff');
+}
+
 /* universal properties */
 * {
     box-sizing: border-box;
@@ -5,49 +29,51 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Hero Light Regular', 'Hero Light Light';
+    font-weight: 900;
 }
-        /* header */
 
 /* header container */
 .header {
     background-color: #1F2937;
     color: white;
-    height: 50%;
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 30px;
+    padding-top: 10px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 /* inner header container */
-.inner-header {
+.logo-nav {
     height: 20%;
     width: 70%;
     margin-top: 10px;
-    /* highlight red to show background*/
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
 
-/* logo */
-.logo-container {
-    display: flex;
-}
 
 /* logo text */
-.logo-container h1 {
+.logo-container a h1 {
     font-size: 24px;
     font-weight: 300;
+    color: white;
 }
 
+/* logo hover properties */
+.logo-container a h1:hover {
+    color: #666699;
+    transition: all 0.3s ease 0s;
+}
+
+/* logo container */
 .logo-container h1 span {
+    font-family: 'Hero Light Bold';
     font-weight: 900;
 }
 
@@ -64,33 +90,45 @@
 }
 
 /* navigation links */
-.navigation a li{
+.navigation a li, button {
     transition: all 0.3s ease 0s;
 }
 
+/* navigation bar hover properties */
 .navigation a li:hover {
     color: #666699;
+    transition: all 0.3s ease 0s;
 }
 
-/* description */
-.header-info {
-    /* highlight to show background */
-    /* background-color: red; */
+/* header body container */
+.header-body {
     display: flex;
-    width: 50%;
+    width: 80%;
     margin: 50px auto 0;
-    gap: 50px;
+    gap: 60px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-/* header text */
-.header-info-text {
+/* header info container */
+.header-info-container {
     text-align: center;
 }
 
+/* header title */
+.header-title h1 {
+    font-family: 'Hero Light Bold';
+    font-size: 33px;
+}
+
+/* header button container */
+.header-button-container {
+    display: flex;
+    justify-content: center;
+}
+
 /* header button */
-button {
+.header-button {
     border-radius: 50px;
     color: white;
     background-color: #3882F6;
@@ -100,6 +138,8 @@ button {
     margin-top: 10px;
 }
 
+
+/* changer color of button when hovering */
 button:hover {
     background-color: #3881f696;
 }
@@ -108,4 +148,125 @@ button:hover {
 .header-image {
     display: flex;
     align-items: center;
+}
+
+/* website body */
+.body {
+    padding: 20px 10%;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* body header */
+.body-header {
+    text-align: center;
+    font-weight: 750;
+    margin-bottom: 20px;
+}
+
+/* image bubbles */
+.bubble-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+/* bubble container */
+.bubble-outline {
+    border: #3882F6;
+    border-width: 4px;
+    border-style: solid;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* text under bubble */
+.bubble-text {
+    max-width: 200px;
+    text-align: center;
+}
+
+/* quote container */
+.quote-container {
+    padding: 100px 150px;
+    background-color: #E5E7EB;
+}
+
+/* quote author */
+.quote-text {
+    font-size: 26px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937
+}
+
+/* quote text */
+.author {
+    display: flex;
+    justify-content: right;
+}
+
+/* pop-up container */
+.pop-up-container {
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 30px 60px;
+    width: 70%;
+    display: flex;
+    background-color: #3882F6;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* pop up container */
+.pop-up-text-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* pop up title */
+.pop-up-title {
+    font-family: 'Hero Light Bold';
+    font-weight: 500;
+}
+
+/* pop up description */
+.pop-up-description {
+    font-size: 14px;
+}
+
+/* pop-up-button */
+.pop-up-button {
+    background-color:#3882F6;
+    padding: 6px;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 5px;
+    color: white;
+    border-style: solid;
+}
+
+/* button hover properties */
+.pop-up-button-container a button:hover{
+    background-color: #184ea396;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+/* footer container*/
+.footer-container {
+    background-color: #1F2937;
+    padding: 50px;
+}
+
+/* footer-text */
+.footer-text {
+    text-align: center;
+    color: white;
 }
